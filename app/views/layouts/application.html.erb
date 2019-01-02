@@ -1,3 +1,4 @@
+<%if @registration%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -836,3 +837,6 @@
   </body>
 
 </html>
+<%else%>
+  <%=yield%>
+<%end%>

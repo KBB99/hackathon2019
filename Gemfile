@@ -32,6 +32,7 @@ gem 'carrierwave', '~> 1.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'faker'
+gem 'bcrypt', '3.1.12'
 
 
 group :development, :test do
