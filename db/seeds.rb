@@ -27,12 +27,14 @@
 #         email: email,
 #     )
 # end
+# Admin.create!(
+#     username: 'example',
+#     password: 'password',
+#     password_confirmation: 'password'
+# )
+
 Admin.create!(
-    username: 'example',
-    password: 'password',
+    username: 'hackettyhacksecret',
+    password: 'zanesaidweshouldhackthepearl',
     password_confirmation: 'password'
 )
-# Admin.create!(
-#     username: 'hackettyhacksecret',
-#     password: 'zanesaidweshouldhackthepearl'
-# )
