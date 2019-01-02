@@ -36,5 +36,5 @@
 Admin.create!(
     username: 'hackettyhacksecret',
     password: 'zanesaidweshouldhackthepearl',
-    password_confirmation: 'password'
+    password_confirmation: 'zanesaidweshouldhackthepearl'
 )
