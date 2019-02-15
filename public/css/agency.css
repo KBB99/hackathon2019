@@ -178,7 +178,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("/img/logos/poster.png");
+  background-image: url("/img/logos/posterMin.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -208,7 +208,7 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 900px;
+    padding-top: 80px;
     padding-bottom: 900px;
   }
   header.masthead .intro-text .intro-lead-in {
