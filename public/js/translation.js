@@ -67,6 +67,7 @@ function translatePage(){
     document.getElementById("logistics").innerHTML = "后勤";
     document.getElementById("publicrelations").innerHTML = "公共关系";
     document.getElementById("events2").innerHTML = "活动";
+    document.getElementById("consultant").innerHTML = "顾问";
     document.getElementsByName("registration[first_name]")[0].placeholder = "名字";
     document.getElementsByName("registration[last_name]")[0].placeholder = "姓";
     document.getElementsByName("registration[email]")[0].placeholder = "电子邮件";
