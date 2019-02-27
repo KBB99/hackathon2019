@@ -36,18 +36,18 @@
 
       <div class="field">
         <label class="btn btn-primary" style="background-color:#607d8b;border-color:#607d8b;margin-left:145px">
-          Curriculum Vitae (CV)
+          CV Letter (Optional)
           <span style="display:none;">
-            <%= form.file_field :cv, id: :registration_cv, class: "btn btn-primary" %>
+            <%= form.file_field :cv, id: :registration_cv, class: "btn btn-primary", required: false  %>
           </span>
         </label>
       </div>
 
       <div class="field">
         <label class="btn btn-primary" style="background-color:#607d8b;border-color:#607d8b;margin-left:145px">
-          Resumé
+          Resumé (Optional)
           <span style="display:none;">
-          <%= form.file_field :resume, id: :registration_resume %>
+          <%= form.file_field :resume, id: :registration_resume, required: false  %>
           </span>
         </label>
       </div>
@@ -58,7 +58,7 @@
     <div class="col-lg-12 text-center">
       <div id="success"></div>
       <br>
-        <%= form.submit "Register", id:"sendMessageButton", class:"btn btn-primary btn-xl text-uppercase"%>
+        <%= form.submit "Submit", id:"sendMessageButton", class:"btn btn-primary btn-xl text-uppercase"%>
     </div>
   </div>
 <% end %>

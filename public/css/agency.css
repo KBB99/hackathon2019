@@ -36,6 +36,19 @@ h6 {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+.table td{
+  color: white;
+}
+
+.table th{
+  font-size: 20px;
+  color: white;
+}
+
+.saturday{
+  padding-top: 30px;
+}
+
 section {
   background-color: #0c0d19;
   padding: 100px 0;
@@ -178,11 +191,12 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("/img/logos/posterMin.png");
+  background-color: #0c0d19;
+  background-image: url("/img/logos/posterMinMobile.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;
+  background-size: 100%;
 }
 
 header.masthead .intro-text {
@@ -224,6 +238,10 @@ header.masthead .intro-text .intro-heading {
     line-height: 75px;
     margin-bottom: 50px;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+  header.masthead{
+    background-image: url("/img/logos/posterMin.png");
+    background-size: cover;
   }
 }
 
