@@ -32,27 +32,33 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#register">Register</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand js-scroll-trigger" href="#register" id="registerText">Register</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" id="menuText">
           Menu
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Intro</a>
+              <a class="nav-link js-scroll-trigger" href="#services" id="introText">Intro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Tracks</a>
+              <a class="nav-link js-scroll-trigger" href="#schedule" id="scheduleText">Schedule</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio" id="tracksText">Tracks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#sponsors" id="sponsorsText">Sponsors</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+              <a class="nav-link js-scroll-trigger" href="#team" id="teamText">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#none" onclick="translatePage()" id = "languageText">中文</a>
             </li>
           </ul>
         </div>
@@ -88,25 +94,137 @@
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-cloud fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Opportunities</h4>
-            <p class="text-muted">Push yourself to discover what you can accomplish in 36 hours while gaining connections.</p>
+            <h4 class="service-heading" id="opportunitiesText">Opportunities</h4>
+            <p class="text-muted" id = "opportunitiesText1">Push yourself to discover what you can accomplish in 36 hours while gaining connections.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+              <i class="fas fa-users fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Programmers</h4>
-            <p class="text-muted"><i>Hack the Pearl</i> will accept applications from accross the world, apply and we will cover everything.</p>
+            <h4 class="service-heading" id="programmersText">Programmers</h4>
+            <p class="text-muted" id="programmersText1"><i>Hack the Pearl</i> will accept applications from accross the world, apply and we will cover everything.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+              <i class="fas fa-plane fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Shanghai</h4>
-            <p class="text-muted">In the world's largest city, you will have the chance to show multinational industries what you are capable of.</p>
+            <h4 class="service-heading" id="shanghaiText">Shanghai</h4>
+            <p class="text-muted" id = "shanghaiText1">In the world's largest city, you will have the chance to show multinational industries what you are capable of.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase" id="scheduleheadingText">Schedule</h2>
+          </div>
+        </div>
+        <!-- Saturday Schedule -->
+        <div class="row text-center">
+          <h3 class="col-lg-12 text-center saturday" id="table01">Saturday</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th id="table02">Time</th>
+                <th id="table03">Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><p>8:30 - 9:30</p></td>
+                <td id="table04">Registration</td>
+              </tr>
+              <tr>
+                <td>9:30 - 10:30</td>
+                <td id="table05">Opening Ceremony</td>
+              </tr>
+              <tr>
+                <td>10:30 -</td>
+                <td id="table06">Hacking Begins</td>
+              </tr>
+              <tr>
+                <td>12:30 - 13:30</td>
+                <td id="table07">Lunch Served</td>
+              </tr>
+              <tr>
+                <td>14:00 - 15:30</td>
+                <td id="table08">Reserved Workshop Time</td>
+              </tr>
+              <tr>
+                <td>16:30 - 16:30</td>
+                <td id="table09">Reserved Workshop Time<br>
+                  School Tour for Sponsors
+                </td>
+              </tr>
+              <tr>
+                <td>18:30 - 19:30</td>
+                <td id="table10">Dinner Served</td>
+              </tr>
+              <tr>
+                <td>20:30 - 21:30</td>
+                <td id="table11">Reserved Workshop Time</td>
+              </tr>
+              <tr>
+                <td>  - 22:00</td>
+                <td id="table12">Hacking Ends<br>
+                  Submit Project<br>
+                  Leave Campus
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Sunday Schedule -->
+        <div class="row text-center">
+          <h3 class="col-lg-12 text-center saturday" id="table13">Sunday</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th id="table14" >Time</th>
+                <th id="table15" >Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><p>9:00 - </p></td>
+                <td id="table16">Hacking Continues</td>
+              </tr>
+              <tr>
+                <td>11:00 - 12:30</td>
+                <td id="table17" >Reserved Workshop Time</td>
+              </tr>
+              <tr>
+                <td>13:00 - 14:00</td>
+                <td id="table18" >Lunch Served</td>
+              </tr>
+              <tr>
+                <td>-16:00</td>
+                <td id="table19" >Submissions Due</td>
+              </tr>
+              <tr>
+                <td>16:00 - 18:00</td>
+                <td id="table20" >Judging and Top 5 Demo</td>
+              </tr>
+              <tr>
+                <td>18:00 - 19:00</td>
+                <td id="table21" >Exhibition Session</td>
+              </tr>
+              <tr>
+                <td>19:00 - 20:00</td>
+                <td id="table22" >Closing Ceremony</td>
+              </tr>
+              <tr>
+                <td>- 20:00</td>
+                <td id="table23" >Non NYU Students Must Leave Campus</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
@@ -116,8 +234,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Tracks</h2>
-            <h3 class="section-subheading text-muted">Click on your favorite to learn more</h3>
+            <h2 class="section-heading text-uppercase" id="trackstitleText">Tracks</h2>
+            <h3 class="section-subheading text-muted" id="trackstitleText1">Click on your favorite to learn more</h3>
           </div>
         </div>
         <div class="row">
@@ -125,13 +243,14 @@
             <a class="portfolio-link" data-toggle="modal" >
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
-                  <p>Robotics</p>
+                  <p id="roboticsText">Projects that focus on translation.
+                  </p>
                 </div>
               </div>
               <img class="img-fluid" src="https://images.unsplash.com/photo-1522051311534-1f53d56b49df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1766&h=1561&q=30" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>MUBO</h4>
+              <h4 id="roboticstitleText">Working With Translation</h4>
               <p class="text-muted"></p>
             </div>
           </div>
@@ -139,13 +258,13 @@
             <a class="portfolio-link" data-toggle="modal">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
-                  <p>Coding</p>
+                  <p id="codingText">Projects that focus on learning or teaching.</p>
                 </div>
               </div>
-              <img class="img-fluid" src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1766&h=1561&q=30" alt="">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1471970471555-19d4b113e9ed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1766&h=1561&q=30" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>SPLICE</h4>
+              <h4 id = "codingtitleText">Education</h4>
               <p class="text-muted"></p>
             </div>
           </div>
@@ -153,13 +272,13 @@
             <a class="portfolio-link" data-toggle="modal">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
-                  <p>Social Good</p>
+                  <p id="socialgoodText">Projects that benefit the world.</p>
                 </div>
               </div>
               <img class="img-fluid" src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1766&h=1561&q=30" alt="Social Good">
             </a>
             <div class="portfolio-caption">
-              <h4>C4G</h4>
+              <h4 id = "socialtitleText">Social Good</h4>
               <p class="text-muted"></p>
             </div>
           </div>
@@ -171,7 +290,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <h2 class="section-heading text-uppercase" id="sponsorstitleText">Sponsors</h2>
             <h3 class="section-subheading text-muted"></h3>
           </div>
         </div>
@@ -181,24 +300,24 @@
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-archway fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Recruitment</h4>
-            <p class="text-muted">Those who participate in this event are likely to be extremely talented, but unknown. As a result you will be able to observe how they perform and decide if they are a good fit for your company.</p>
+            <h4 class="service-heading" id = "recruitmentText">Recruitment</h4>
+            <p class="text-muted" id = "recruitmentText1">Those who participate in this event are likely to be extremely talented, but unknown. As a result you will be able to observe how they perform and decide if they are a good fit for your company.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-braille fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Advertising</h4>
-            <p class="text-muted">By attaching their company's name to <i>Hack the Pearl</i>, companies will be able to raise brand awareness and establish themselves as leaders in technical development.</p>
+            <h4 class="service-heading" id="adtitleText">Advertising</h4>
+            <p class="text-muted" id = "adtitleText1">By attaching their company's name to <i>Hack the Pearl</i>, companies will be able to raise brand awareness and establish themselves as leaders in technical development.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">API Promotion</h4>
-            <p class="text-muted">If you are interested in having developers work with your APIs, a hackathon is the ideal prefect solution.</p>
+            <h4 class="service-heading" id="apiText">API Promotion</h4>
+            <p class="text-muted" id ="apiText1">If you are interested in having developers work with your APIs, a hackathon is the ideal prefect solution.</p>
           </div>
         </div>
         <div class ="row">
@@ -298,16 +417,16 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">The ones who make it all happen</h3>
+            <h2 class="section-heading text-uppercase" id = "teamText1">Our Amazing Team</h2>
+            <h3 class="section-subheading text-muted" id = "teamText2">The ones who make it all happen</h3>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/40322418_1731169283662285_7950072820963213312_n.jpg?_nc_cat=106&_nc_ht=scontent-ort2-2.xx&oh=d1d9a6327b9dc2acfcb464b78edc784e&oe=5CD344B4" alt="">
+              <img class="mx-auto rounded-circle" src="/img/team/zane.jpg" alt="">
               <h4>Zane Fadul</h4>
-              <p class="text-muted">Program Chair</p>
+              <p class="text-muted" id="programchair" >Program Chair</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="mailto:zane@hackthepearl.com">
@@ -331,7 +450,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="https://code4g.s3.amazonaws.com/uploads/user/picture/1/WhatsApp_Image_2018-08-16_at_1.08.56_AM.jpeg" alt="">
               <h4>Kenton Blacutt</h4>
-              <p class="text-muted">Web Development</p>
+              <p class="text-muted" id = "webdev">Web Development</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="mailto:kenton@hackthepearl.com">
@@ -353,9 +472,9 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-1/p320x320/25443065_121062205352603_5820578431218736795_n.jpg?_nc_cat=111&_nc_ht=scontent-ort2-2.xx&oh=feec6e79066623212514706d6c5fe870&oe=5C90FDC6" alt="">
+              <img class="mx-auto rounded-circle" src="/img/team/thomasyeet.jpg" alt="">
               <h4>Thomas Yee</h4>
-              <p class="text-muted">Marketing</p>
+              <p class="text-muted" id = "marketingText">Marketing</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="mailto:thomas@hackthepearl.com">
@@ -379,7 +498,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="https://scontent.flpb3-1.fna.fbcdn.net/v/t1.0-9/44593768_2156145941096691_7979090049511718912_n.jpg?_nc_cat=100&_nc_ht=scontent.flpb3-1.fna&oh=a653f41f55938d3a2a598c556390cc4d&oe=5CD09A1F" alt="">
               <h4>Andrew Liu</h4>
-              <p class="text-muted">Events</p>
+              <p class="text-muted" id="events1" >Events</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="mailto:andrew@hackthepearl.com">
@@ -392,7 +511,7 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/andrew-liu-049712161/">
                     <i class="fab fa-linkedin-in"></i>
                   </a>
                 </li>
@@ -403,7 +522,7 @@
             <div class="team-member">
               <img class= "mx-auto rounded-circle" src="/img/team/john.jpg" alt="">
               <h4>John Liu</h4>
-              <p class="text-muted">Finance</p>
+              <p class="text-muted" id = "finance">Finance</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="mailto:john@hackthepearl.com">
@@ -427,7 +546,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="https://scontent.flpb3-1.fna.fbcdn.net/v/t1.0-9/31880513_1817677741860072_5775873153532166144_o.jpg?_nc_cat=106&_nc_ht=scontent.flpb3-1.fna&oh=d319788a0ba9001428506091c971592f&oe=5C8B2A8B" alt="">
               <h4>Lily Wang</h4>
-              <p class="text-muted">Logistics</p>
+              <p class="text-muted" id = "logistics">Logistics</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="mailto:lily@hackthepearl.com">
@@ -451,7 +570,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/daniel.jpg" alt="">
               <h4>Daniel Qin</h4>
-              <p class="text-muted">Public Relations</p>
+              <p class="text-muted" id="publicrelations">Public Relations</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="mailto:daniel_qin@hackthepearl.com">
@@ -473,9 +592,9 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="https://scontent.flpb3-1.fna.fbcdn.net/v/t1.0-9/38134306_2164427387122906_5853852365009977344_o.jpg?_nc_cat=106&_nc_ht=scontent.flpb3-1.fna&oh=3067dbb873dd1d1447459b2b576a5745&oe=5CC672CA" alt="">
+              <img class="mx-auto rounded-circle" src="img/team/thomastai.jpeg" alt="">
               <h4>Thomas Tai</h4>
-              <p class="text-muted">Events</p>
+              <p class="text-muted" id="events2">Events</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="mailto:thomast@hackthepearl.com">
@@ -484,6 +603,30 @@
                 </li>
                 <li class="list-inline-item">
                   <a href="https://www.facebook.com/profile.php?id=100006669974984">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/ttai/">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/zijie.jpg" alt="">
+              <h4>Zi Jie Lu</h4>
+              <p class="text-muted" id="consultant">Honorary Consultant</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:zijielu@hackthepearl.com">
+                    <i class="fab fa-google"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/profile.php?id=100006551889929">
                     <i class="fab fa-facebook-f"></i>
                   </a>
                 </li>
@@ -542,7 +685,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Register</h2>
+            <h2 class="section-heading text-uppercase" id = "registerlargeText">Register</h2>
             <!-- <h3 class="section-subheading text-muted">If you're interested in participating, please register.</h3> -->
           </div>
         </div>
@@ -615,7 +758,7 @@
                 <a href="#">Privacy Policy</a>
               </li> -->
               <li class="list-inline-item">
-                <a href="mailto:hackthepearl@hackthepearl.com">Contact</a>
+                <a id = "contactText" href="mailto:hackthepearl@hackthepearl.com">Contact</a>
               </li>
             </ul>
           </div>
@@ -842,6 +985,9 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+
+    <!-- Custom translation script -->
+    <script src="js/translation.js"></script>
 
   </body>
 
