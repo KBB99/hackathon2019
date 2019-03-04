@@ -19,7 +19,7 @@ git clone https://github.com/KBB99/hackathon2019.git
 ## Install Dependencies
 
 ```shell
-cd activados
+cd hackathon2019
 ```
 
 ```shell
