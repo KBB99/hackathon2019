@@ -13,7 +13,7 @@ rails --version
 ## Clone Repository
 
 ```shell
-git clone https://github.com/KBB99/activados.git
+git clone https://github.com/KBB99/hackathon2019.git
 ```
 
 ## Install Dependencies
@@ -40,4 +40,4 @@ rails server
 
 ### Contact
 
-For any questions regarding Activados send an email to github@hackthepearl.com
+For any questions regarding HackThePearl send an email to github@hackthepearl.com
