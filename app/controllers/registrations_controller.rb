@@ -4,14 +4,14 @@ class RegistrationsController < ApplicationController
   # GET /registrations
   # GET /registrations.json
   def index
-    :logged_in_admin
+    logged_in_admin
     @registrations = Registration.all
   end
 
   # GET /registrations/1
   # GET /registrations/1.json
   def show
-    :logged_in_admin
+    logged_in_admin
   end
 
   # GET /registrations/new
@@ -21,7 +21,7 @@ class RegistrationsController < ApplicationController
 
   # GET /registrations/1/edit
   def edit
-    :logged_in_admin
+    logged_in_admin
   end
 
   # POST /registrations
@@ -43,7 +43,7 @@ class RegistrationsController < ApplicationController
   # PATCH/PUT /registrations/1
   # PATCH/PUT /registrations/1.json
   def update
-    :logged_in_admin
+    logged_in_admin
     respond_to do |format|
       if @registration.update(registration_params)
         format.html { redirect_to @registration, notice: 'Registration was successfully updated.' }
@@ -58,7 +58,7 @@ class RegistrationsController < ApplicationController
   # DELETE /registrations/1
   # DELETE /registrations/1.json
   def destroy
-    :logged_in_admin
+    logged_in_admin
     @registration.destroy
     respond_to do |format|
       format.html { redirect_to registrations_url, notice: 'Registration was successfully destroyed.' }
@@ -74,6 +74,6 @@ class RegistrationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def registration_params
-      params.require(:registration).permit(:first_name, :last_name, :organization, :linked_in, :email, :cv, :resume)
+      params.require(:registration).permit(:first_name, :last_name, :organization, :linked_in, :email, :cv, :resume, :github)
     end
 end

@@ -1,24 +1,43 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The official HackThePearl github repository. The live website is available at https://www.hackthepearl.com
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+Dependent on Rails 5.1.6 or greater.
 
-* System dependencies
+```shell
+rails --version
+```
 
-* Configuration
+## Clone Repository
 
-* Database creation
+```shell
+git clone https://github.com/KBB99/hackathon2019.git
+```
 
-* Database initialization
+## Install Dependencies
 
-* How to run the test suite
+```shell
+cd hackathon2019
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+```shell
+bundle install
+```
 
-* Deployment instructions
+## Setup Database
 
-* ...
+```shell
+rails db:migrate
+```
+
+## Run on Localhost
+
+```shell
+rails server
+```
+
+### Contact
+
+For any questions regarding HackThePearl send an email to github@hackthepearl.com
