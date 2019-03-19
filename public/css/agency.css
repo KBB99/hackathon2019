@@ -258,6 +258,10 @@ header.masthead .intro-text .intro-heading {
   text-transform: none;
 }
 
+.offset{
+	margin-left: calc(50% - 100px);
+}
+
 #hsbc{
   padding-top: 50px;
   padding-left: 10%;
@@ -659,7 +663,7 @@ section#contact .form-group {
 
 section#contact .form-group input,
 section#contact .form-group textarea {
-  margin-left:150px;
+  margin-left: calc(50% - 120px);
   padding: 20px;
 }
 

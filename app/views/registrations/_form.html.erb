@@ -39,7 +39,7 @@
       </div>
 
       <div class="field">
-        <label class="btn btn-primary" style="background-color:#607d8b;border-color:#607d8b;margin-left:145px">
+        <label class="btn btn-primary offset">
           CV Letter (Optional)
           <span style="display:none;">
             <%= form.file_field :cv, id: :registration_cv, class: "btn btn-primary", required: false  %>
@@ -48,8 +48,8 @@
       </div>
 
       <div class="field">
-        <label class="btn btn-primary" style="background-color:#607d8b;border-color:#607d8b;margin-left:145px">
-          Resumé (Optional)
+        <label class="btn btn-primary offset">
+          Resumé (Optional)  
           <span style="display:none;">
           <%= form.file_field :resume, id: :registration_resume, required: false  %>
           </span>
