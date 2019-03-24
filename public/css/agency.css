@@ -259,14 +259,23 @@ header.masthead .intro-text .intro-heading {
 }
 
 .offset{
-	margin-left: calc(50% - 100px);
+  margin-left: calc(50% - 120px);
+  color: white;
 }
 
 #hsbc{
-  padding-top: 50px;
   padding-left: 10%;
   padding-right: 10%;
-  width: 90%;
+  padding-bottom: 30px;
+  width: 80%;
+}
+
+#nyu{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  width: 75%;
 }
 
 #charlies{
@@ -277,6 +286,13 @@ header.masthead .intro-text .intro-heading {
 }
 
 #ruofan{
+  padding-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 45%;
+}
+
+#zhazha{
   padding-top: 50px;
   padding-left: 10%;
   padding-right: 10%;
@@ -662,7 +678,8 @@ section#contact .form-group {
 }
 
 section#contact .form-group input,
-section#contact .form-group textarea {
+section#contact .form-group textarea,
+section#contact .form-group select {
   margin-left: calc(50% - 120px);
   padding: 20px;
 }

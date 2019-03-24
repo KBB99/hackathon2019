@@ -26,9 +26,6 @@
       </div>
     </div>
     <div class="col-md-6">
-      <div class="form-group">
-        <%= form.text_field :organization, id: :registration_organization, placeholder:"Team Names (Up to 3)", required: true %>
-      </div>
 
       <div class="form-group">
         <%= form.text_field :linked_in, id: :registration_linked_in, placeholder:"LinkedIn (Optional)", required: false %>
@@ -37,6 +34,14 @@
       <div class="form-group">
         <%= form.text_field :github, id: :registration_github, placeholder:"GitHub (Optional)", required: false %>
       </div>
+
+      <p class="offset" id="teamSelectText">Do you have a team? <br> (2-3 people per team)</p>
+
+      <div class="form-group">
+        <%= form.select :organization, ['Yes - I have a team', 'No - Put me in a group'], required: true %>
+      </div>
+
+      <p class="offset" id="teamSelectText">May be used by recruiters</p>
 
       <div class="field">
         <label class="btn btn-primary offset">
@@ -49,12 +54,13 @@
 
       <div class="field">
         <label class="btn btn-primary offset">
-          Resumé (Optional)  
+          Resumé (Optional)
           <span style="display:none;">
           <%= form.file_field :resume, id: :registration_resume, required: false  %>
           </span>
         </label>
       </div>
+
     </div>
     <div class="clearfix"></div>
 
