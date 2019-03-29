@@ -263,41 +263,41 @@ header.masthead .intro-text .intro-heading {
   color: white;
 }
 
+.sponsorlogo{
+  margin: auto;
+  margin-bottom: 50px;
+  width: 50%;
+}
+
+.sponsorlogo img{
+  height: 100%;
+  width: 100%;
+}
+
+.sponsorlogo img {
+  transition: transform .5s ease;
+}
+
+.sponsorlogo:hover img {
+  transform: scale(1.1);
+}
+
 #hsbc{
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 30px;
-  width: 80%;
+  width: 55%;
 }
 
 #nyu{
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 50px;
-  padding-bottom: 30px;
-  width: 75%;
+  width: 52%;
 }
 
 #charlies{
-  padding-top: 50px;
-  padding-left: 10%;
-  padding-right: 10%;
-  width: 50%;
+  display: inline-block;
+  width: 32%;
 }
 
 #ruofan{
-  padding-top: 50px;
-  padding-left: 10%;
-  padding-right: 10%;
-  width: 45%;
-}
-
-#zhazha{
-  padding-top: 50px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 50px;
-  width: 50%;
+  display: inline-block;
+  width: 32%;
 }
 
 #portfolio .portfolio-item {
