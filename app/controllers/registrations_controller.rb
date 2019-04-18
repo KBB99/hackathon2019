@@ -30,13 +30,12 @@ class RegistrationsController < ApplicationController
     @registration = Registration.new(registration_params)
 
     respond_to do |format|
-      if @registration.save
-        format.html { redirect_to root_url, notice: 'Your Registration Form was Submitted Succesfully!' }
-        format.json { render :show, status: :created, location: @registration }
-      else
-        format.html { render :new }
-        format.json { render json: @registration.errors, status: :unprocessable_entity }
-      end
+      # if @registration.save
+      format.html { redirect_to root_url, notice: 'Sorry, registrations are now closed' }
+      # else
+      #   format.html { render :new }
+      #   format.json { render json: @registration.errors, status: :unprocessable_entity }
+      # end
     end
   end
 
